@@ -4,12 +4,12 @@ import os
 
 # Import SFDC Auth dict 
 try: 
-    from salesforce_setup.get_sfdc_auth import sfdc_auth
+    from sfdc_backup.salesforce.salesforce_setup.get_sfdc_auth import sfdc_auth
 except:
-    from salesforce_setup.setup_sfdc_creds import encrypt_sfdc_creds
+    from sfdc_backup.salesforce.salesforce_setup.setup_sfdc_creds import encrypt_sfdc_creds
     # Run Encrypt Salesforce Creds Function to init creds 
     encrypt_sfdc_creds()
-    from salesforce_setup.get_sfdc_auth import sfdc_auth
+    from sfdc_backup.salesforce.salesforce_setup.get_sfdc_auth import sfdc_auth
  
 class MySalesforce:
  

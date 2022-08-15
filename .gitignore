@@ -1,0 +1,9 @@
+# remove salesforce Auth Fiels 
+salesforce.key
+sfdc_auth.json
+
+# remove pyenv info 
+.python-version
+
+# remove vscode 
+~/.vscode

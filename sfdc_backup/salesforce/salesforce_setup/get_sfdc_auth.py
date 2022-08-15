@@ -1,6 +1,6 @@
 import json
 from cryptography.fernet import Fernet 
-from salesforce_setup.setup_sfdc_creds import load_key
+from sfdc_backup.salesforce.salesforce_setup.setup_sfdc_creds import load_key
 
 def decrpt_sfdc_cred(encrypted_message):
     '''
