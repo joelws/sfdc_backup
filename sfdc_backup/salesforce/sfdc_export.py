@@ -66,7 +66,7 @@ def get_schema():
     objects_to_backup = [
         'Account',
         'Contact',
-        'Opportunity'
+        'Opportunity',
         'Lead',
         'Campaign',
         'CampaignMember',
