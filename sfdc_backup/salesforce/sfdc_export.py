@@ -116,7 +116,6 @@ def query_objects(schema):
         # return (object name, data) tuple 
         return object_name, data 
 
-    print(queries)
     # # query all objects 
     query_res = multi_threaded_req(query_object, queries.keys())
 
