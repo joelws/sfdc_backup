@@ -4,12 +4,12 @@ import os
 
 # Import SFDC Auth dict 
 try: 
-    from sfdc_backup.salesforce.salesforce_setup.get_sfdc_auth import sfdc_auth
+    from sfdc_backup.salesforce.setup.get_sfdc_auth import sfdc_auth
 except:
-    from sfdc_backup.salesforce.salesforce_setup.setup_sfdc_creds import encrypt_sfdc_creds
+    from sfdc_backup.salesforce.setup.setup_sfdc_creds import encrypt_sfdc_creds
     # Run Encrypt Salesforce Creds Function to init creds 
     encrypt_sfdc_creds()
-    from sfdc_backup.salesforce.salesforce_setup.get_sfdc_auth import sfdc_auth
+    from sfdc_backup.salesforce.setup.get_sfdc_auth import sfdc_auth
  
 class MySalesforce:
  
@@ -28,7 +28,7 @@ class MySalesforce:
         - query: Type - string or filepath | SQL Query filepath or text input defined in a variable
         - is_sql_file: Type - Bool | mark true if it's a file, so that it will open. Defualt = FALSE in order to accept a string. 
         '''
-        sf = my_salesforce.sf
+        sf = MySalesforce.sf
  
         if is_sql_file == True:
  
