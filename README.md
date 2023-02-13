@@ -15,7 +15,7 @@
 - sf_username=${sf_username}
 - sf_passowrd=${sf_password}
 - sf_token=${sf_token}
-- OBJECT_LIST="Opportunity, Account, Contact"
+- OBJECT_LIST=Opportunity, Account, Contact
 ```
 - SFDC Token recieved via email when you reset your password. 
 - OBJECT_LIST must be a string of comma separated values
