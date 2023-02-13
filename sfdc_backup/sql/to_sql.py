@@ -26,9 +26,10 @@ def sfdc_to_sql(object_list : list,connection : object, timestamp=True, **kwargs
         if timestamp == True:
             df['timestamp'] = datetime.now().timestamp()
             
-        df.to_sql(
+        rows = df.to_sql(
             name=table,
             con=connection,
             index=False,
             **kwargs
         )
+        print(f"The {table} table had {rows} rows inserted")

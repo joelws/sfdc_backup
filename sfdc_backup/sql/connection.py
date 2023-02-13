@@ -16,4 +16,4 @@ def get_engine():
         password=config.SQL_PASSWORD
     )
 
-    return sa.create_engine(url)
+    return sa.create_engine(url).execution_options(autocommit=True)
