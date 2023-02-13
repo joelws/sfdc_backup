@@ -22,6 +22,7 @@
 
 ## Running the service
 - This is built to be run as a scheduled service to backup to a SQL DB. 
+- Just schedule the Dockerfile to run with the approraite environment variables and you're good to go.
 - Testing is done with postgres to mimic Redshift's Postgres setup
 
 ### Testing
